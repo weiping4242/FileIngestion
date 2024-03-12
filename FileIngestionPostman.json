@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "14e94d2b-6f55-4a7b-832a-e718b91364dd",
+		"name": "My Testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30281547"
+	},
+	"item": [
+		{
+			"name": "IngestFileNoDB",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fileName\": \"C:\\\\eclipse-workspace\\\\demoFile\\\\src\\\\main\\\\resources\\\\templates\\\\Sinput.txt\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/IngestFileNoDB",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"IngestFileNoDB"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Files",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fileName\": \"input.txt\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/getFiles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"getFiles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "IngestFileDB",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fileName\": \"C:\\\\eclipse-workspace\\\\demoFile\\\\src\\\\main\\\\resources\\\\templates\\\\Sinput.txt\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/IngestFileDB",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"IngestFileDB"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ClearData",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fileName\": \"input.txt\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/clearDate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"clearDate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
